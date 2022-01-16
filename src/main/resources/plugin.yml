@@ -1,0 +1,15 @@
+name: JoinSound
+version: '${project.version}'
+main: me.gush3l.joinsound.JoinSound
+api-version: 1.17
+authors: [ gush3l ]
+softdepend:
+  - PlaceholderAPI
+description: Play a sound for players that join the server
+commands:
+  joinsound:
+    aliases:
+      - joins
+      - js
+      - joinsounds
+    description: Main plugin command

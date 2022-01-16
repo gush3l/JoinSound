@@ -1,0 +1,29 @@
+Config:
+  Join-Sound:
+    Enable: true
+    Volume: 1
+    Pitch: 1
+    Sound-Name: "custom:joinsound"
+  Join-Message:
+    #True - will broadcast a join message
+    Enable: true
+    #Only players with the permission JoinSound.JoinMessage will be broadcasting the join message
+    Require-Permission: false
+  Compatibility:
+    #True - will parse PlaceholderAPI placeholders from messages
+    PlaceholderAPI: true
+  #True - Require the server to send a resource pack to the player before the sound will be sent
+  Require-Server-Resource-Pack: true
+  #Delay sending the join sound to the player, the time is in in-game ticks
+  Delay-To-Send-Sound: 200
+Messages:
+  No-Permission: "&cYou can't execute this command!"
+  Unknown-Command: "&cUnknow command! Please use /joinsound reload|send [target]"
+  Join-Message: "&2&kkk &aWelcome %player% to the server!"
+  Reload: "&aReloaded the plugin!"
+  Send-Sound:
+    Invalid-Target: "&cThis player isn''t online!"
+    Sender: "&aYou sent a join sound to %player%!"
+    Target:
+      Enable-Message: true
+      Message: "&a%player% sent you a join sound!"
